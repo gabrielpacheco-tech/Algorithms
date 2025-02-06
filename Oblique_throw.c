@@ -18,22 +18,24 @@
 	printf("Qual a altura inicial do lancamento? (em metros) (Saber se o projeto foi lancado no nivel do solo) \n");
     scanf("%f", &altura_inicial);	
 	 
-	/* Separar o lançamento em 2 movimentos independentes:
-		Na vertical (y):
+	/* I will try to translate some portuguese terms to English lol (I am Brazillian)
+ 		
+ Let's separate the motion in two components (vertically (y) and horizontally (x)) 	
+		Vertically (y):
 		
-		v0y = velocidade*sin(angulo);
-		Na subida:
+		v0y = velocidade(throw speed)*sin(angle);
+		Going up:
 		
 			a = -g = -9.81 m/s^2, v0 = v0y, v = 0 m/s
-			altura_atingida (delta y) = [(v^2 - (v0y^2) )/(2*a)] + altura_inicial;
-			tempo_de_subida = v0y/g;  
+			altura_atingida(max height) (delta y) = [(v^2 - (v0y^2) )/(2*a)] + altura_inicial(initial height);
+			tempo_de_subida(going up time) = v0y/g;  
 			                                 
-		Na queda livre: a = g = +9.81 m/s^2, v0 = 0 m/s, altura = delta y = altura_atingida, v = ??
-			tempo_de_descida = tempo_de_subida
+		Free fall: a = g = +9.81 m/s^2, v0 = 0 m/s, altura = delta y = altura_atingida, v = ??
+			tempo_de_descida (going down time) = tempo_de_subida
 			tempo_total = tempo_de_subida + tempo_de_descida
 			velocidade(componente y) final antes de atingir o solo = vy = sqrt((2*g*altura_atingida)
 		
-		Na horizontal (x): v = v0 = const = velocidade, a = 0 m/s^2
+		Horizontally (x): v = v0 = const = velocidade, a = 0 m/s^2
 	
 			v0x = velocidade*cos(angulo)
 			alcance = v0x*tempo_total
