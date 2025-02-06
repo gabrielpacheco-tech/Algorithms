@@ -1,3 +1,5 @@
+#This script automatically Qeues in a League of Legends ranked solo/duo match in the lane you've chosen (it is in Portuguese tho)
+
 import pyautogui
 import time
 
