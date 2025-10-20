@@ -30,16 +30,16 @@
 			altura_atingida(max height) (delta y) = [(v^2 - (v0y^2) )/(2*a)] + altura_inicial(initial height);
 			tempo_de_subida(going up time) = v0y/g;  
 			                                 
-		Free fall: a = g = +9.81 m/s^2, v0 = 0 m/s, altura = delta y = altura_atingida, v = ??
-			tempo_de_descida (going down time) = tempo_de_subida
-			tempo_total = tempo_de_subida + tempo_de_descida
-			velocidade(componente y) final antes de atingir o solo = vy = sqrt((2*g*altura_atingida)
+		Free fall: a = g = +9.81 m/s^2, v0 = 0 m/s, altura (height) = delta y = altura_atingida, v = ??
+			tempo_de_descida (going down time) = tempo_de_subida (going up time)
+			tempo_total = tempo_de_subida + tempo_de_descida (total time = going up + going down time)
+			velocidade(componente y) final antes de atingir o solo = vy = sqrt((2*g*altura_atingida) (final speed)
 		
 		Horizontally (x): v = v0 = const = velocidade, a = 0 m/s^2
 	
-			v0x = velocidade*cos(angulo)
-			alcance = v0x*tempo_total
-			velocidade(componente x) final antes de atingir o solo = vx = v0x
+			v0x = velocidade*cos(angulo) 
+			alcance = v0x*tempo_total (reach)
+			velocidade(componente x) final antes de atingir o solo = vx = v0x (final speed)
 	*/
 	  
 	v0y = velocidade*sin(angulo_radianos);
