@@ -1,4 +1,4 @@
-#This script automatically Qeues in a League of Legends ranked solo/duo match in the lane you've chosen (it is in Portuguese and those files are on my PC)
+#This script automatically Queues in a League of Legends ranked solo/duo match in the lane you've chosen (it is in Portuguese and those files are on my PC)
 
 import pyautogui
 import time
@@ -238,4 +238,5 @@ while True:
             except pyautogui.ImageNotFoundException:
                 print("Tentando localizar 'O LOL'... \n")
                 time.sleep(3)                      
+
 
